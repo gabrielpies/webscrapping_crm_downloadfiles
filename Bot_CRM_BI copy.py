@@ -35,7 +35,7 @@ data_fim1 = date.today()
 caminho_pasta_destino = DEST_DIR
 caminho_pasta_BKP = BACKUP_DIR
 
-#teste
+#teste de commit pro v2 - agora desta vez vai confia
 
 
 # Converte os arquivos em xls para xlsx
