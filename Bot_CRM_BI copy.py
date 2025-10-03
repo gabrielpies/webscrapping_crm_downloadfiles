@@ -22,11 +22,11 @@ ENV_PATH = os.path.join(os.path.dirname(__file__), "Bot_CRM_BI copy.env")
 load_dotenv(ENV_PATH)
 
 # Variáveis de ambiente com valores padrão (fallback)
-CRM_USER = os.getenv("CRM_USER") or "04950891170"
-CRM_PASSWORD = os.getenv("CRM_PASSWORD") or "Cenoura2!"
-CRM_LOGIN_URL = os.getenv("CRM_LOGIN_URL") or "https://facportalipasgo.facilinformatica.com.br/account/login?returnUrl="
-DEST_DIR = os.getenv("DEST_DIR") or r'C:\Users\04950891170\OneDrive - IPASGO\IPASGO_GERAT - Documentos\3.1 - CRM AUTOMAÇÃO PYTHON\DAILY'
-BACKUP_DIR = os.getenv("BACKUP_DIR") or r'C:\Users\04950891170\OneDrive - IPASGO\IPASGO_GERAT - Documentos\3.1 - CRM AUTOMAÇÃO PYTHON\BKP'
+CRM_USER = os.getenv("CRM_USER") 
+CRM_PASSWORD = os.getenv("CRM_PASSWORD") 
+CRM_LOGIN_URL = os.getenv("CRM_LOGIN_URL") 
+DEST_DIR = os.getenv("DEST_DIR") 
+BACKUP_DIR = os.getenv("BACKUP_DIR")
 
 data_inicio1 = date(2025,4,26)
 #data_fim1 = date(2025, 9, 19)
@@ -35,10 +35,9 @@ data_fim1 = date.today()
 caminho_pasta_destino = DEST_DIR
 caminho_pasta_BKP = BACKUP_DIR
 
-#teste de commit pro v2 - agora desta vez vai confia
-
 
 # Converte os arquivos em xls para xlsx
+
 def converter_xls_para_xlsx(caminho_arquivo_xls, pasta_destino):
     try:
         nome_arquivo = os.path.basename(caminho_arquivo_xls) # Extrai o nome do arquivo do caminho completo
